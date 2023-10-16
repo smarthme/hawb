@@ -5,7 +5,8 @@
         "description" : "Modbus configuration",
         "data": {
           "modbus_hub": "Modbus hub",
-          "mdm3_list": "Mdm3 addresses (comma separated list)"
+          "mdm3_list": "Mdm3 addresses (comma separated list)",
+          "map6s_list": "Map6s addresses (comma separated list)"
         }
       }
     }

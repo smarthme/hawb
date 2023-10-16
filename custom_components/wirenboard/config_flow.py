@@ -8,7 +8,7 @@ from homeassistant import config_entries, exceptions
 from homeassistant.core import HomeAssistant
 import voluptuous as vol
 
-from .const import (DOMAIN, CONF_MODBUS_HUB, CONF_MDM3_LIST)
+from .const import (DOMAIN, CONF_MODBUS_HUB, CONF_MDM3_LIST, CONF_MAP6S_LIST)
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -20,7 +20,8 @@ class WbConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         data_schema = {
             vol.Required(CONF_MODBUS_HUB): str,
-            vol.Required(CONF_MDM3_LIST): str
+            vol.Optional(CONF_MDM3_LIST): str,
+            vol.Optional(CONF_MAP6S_LIST): str
         }
 
         return self.async_show_form(
