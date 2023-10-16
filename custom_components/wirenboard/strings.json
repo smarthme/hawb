@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description" : "Modbus configuration",
+        "data": {
+          "modbus_hub": "Modbus hub",
+          "mdm3_list": "Mdm3 addresses (comma separated list)"
+        }
+      }
+    }
+  }
+}
